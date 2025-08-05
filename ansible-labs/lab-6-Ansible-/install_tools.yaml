@@ -1,8 +1,0 @@
----
-- name: Install Docker and kubectl
-  hosts: all
-  become: true
-  roles:
-    - docker
-    - kubectl
-
