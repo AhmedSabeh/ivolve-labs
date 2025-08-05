@@ -1,0 +1,25 @@
+---
+- name: Configure web server on Amazon Linux 2023
+  hosts: webservers
+  become: true
+  tasks:
+    - name: Install Nginx using dnf
+      dnf:
+        name: nginx
+        state: present
+
+    - name: Customize the index.html page
+      copy:
+        content: |
+          <html>
+          <head><title>Welcome</title></head>
+          <body><h1>This page is deployed using Ansible 🚀</h1></body>
+          </html>
+        dest: /usr/share/nginx/html/index.html
+
+    - name: Ensure Nginx is running and enabled
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+

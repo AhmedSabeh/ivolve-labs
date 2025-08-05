@@ -1,0 +1,13 @@
+---
+- name: Install Docker on Amazon Linux 2023
+  dnf:
+    name: docker
+    state: present
+  become: true
+
+- name: Enable and start Docker service
+  systemd:
+    name: docker
+    enabled: yes
+    state: started
+  become: true
