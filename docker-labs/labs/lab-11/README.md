@@ -19,14 +19,13 @@ We will explore **two approaches**:
 ---
 
 ## 1️⃣ Clone the Repository
-```bash
+```
 git clone https://github.com/IbrahimAdel15/Docker1.git
 cd Docker1
+```
 2️⃣ Option A: Build Inside Container
 Step 1: Create Dockerfile
-dockerfile
-Copy
-Edit
+```
 # Use Maven with Java 17
 FROM maven:3.9.6-eclipse-temurin-17
 
@@ -44,26 +43,22 @@ EXPOSE 9092
 
 # Run the Spring Boot application
 CMD ["java", "-jar", "target/demo-0.0.1-SNAPSHOT.jar"]
+```
 Step 2: Build the Image
-bash
-Copy
-Edit
+```
 docker build -t springboot-docker:latest .
+```
 Step 3: Run the Container
-bash
-Copy
-Edit
+```
 docker run -d --name springboot-container -p 9092:9092 springboot-docker:latest
+```
 3️⃣ Option B: Build Locally First
 Step 1: Build the Application Locally
-bash
-Copy
-Edit
+```
 mvn clean package
+```
 Step 2: Create Dockerfile
-dockerfile
-Copy
-Edit
+```
 # Use Java 17 base image
 FROM eclipse-temurin:17-jdk
 
@@ -78,35 +73,29 @@ EXPOSE 9092
 
 # Run the Spring Boot application
 CMD ["java", "-jar", "app.jar"]
+```
 Step 3: Build the Image
-bash
-Copy
-Edit
+```
 docker build -t springboot-docker:latest .
+```
 Step 4: Run the Container
-bash
-Copy
-Edit
+```
 docker run -d --name springboot-container -p 9092:9092 springboot-docker:latest
+```
 4️⃣ Testing the Application
 Using curl:
-
-bash
-Copy
-Edit
+```
 curl http://localhost:9092
+```
 Or open in a browser:
 
-arduino
-Copy
-Edit
 http://localhost:9092
+
 5️⃣ Stopping & Removing Containers
-bash
-Copy
-Edit
+```
 docker stop springboot-container
 docker rm springboot-container
+```
 6️⃣ Notes
 Option A: Builds the application inside the Docker image. Useful for CI/CD pipelines.
 
