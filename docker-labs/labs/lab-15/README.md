@@ -23,7 +23,7 @@
 git clone https://github.com/Ibrahim-Adel15/Docker5.git
 cd Docker5
 ```
-2️⃣ Build Frontend Image
+## 2️⃣ Build Frontend Image
 Dockerfile: frontend/Dockerfile
 ```
 FROM python:3.9-slim
@@ -44,7 +44,7 @@ Build the image:
 cd frontend
 docker build -t frontend-app .
 ```
-3️⃣ Build Backend Image
+## 3️⃣ Build Backend Image
 Dockerfile: backend/Dockerfile
 ```
 FROM python:3.9-slim
@@ -64,11 +64,11 @@ Build the image:
 cd ../backend
 docker build -t backend-app .
 ```
-4️⃣ Create a Custom Docker Network
+## 4️⃣ Create a Custom Docker Network
 ```
 docker network create ivolve-network
 ```
-5️⃣ Run Containers
+## 5️⃣ Run Containers
 Run Backend (internal only, no -p)
 ```
 docker run -d --name backend --network ivolve-network backend-app
@@ -81,7 +81,7 @@ Run Frontend2 (default network, isolated from backend)
 ```
 docker run -d --name frontend2 -p 5002:5000 frontend-app
 ```
-6️⃣ Test Communication
+## 6️⃣ Test Communication
 Frontend1 → Backend (✅ should work):
 ```
 docker exec -it frontend1 ping backend
@@ -90,7 +90,9 @@ Frontend2 → Backend (❌ should fail):
 ```
 docker exec -it frontend2 ping backend
 ```
-7️⃣ Remove the Custom Network
+<img width="795" height="443" alt="Screenshot (133)" src="https://github.com/user-attachments/assets/08ec189c-936a-40c0-a6d1-52ffc9d29ae2" />
+
+## 7️⃣ Remove the Custom Network
 ```
 docker network rm ivolve-network
 ```
