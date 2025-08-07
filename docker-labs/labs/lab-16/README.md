@@ -1,5 +1,5 @@
 # Lab 16: Docker Compose for Node.js + PostgreSQL App
--  Clone source code and Dockerfile from https:// github.com/Ibrahim Adel15/docker6.git
+-  Clone source code and Dockerfile from https://github.com/Ibrahim-Adel15/docker6.git
 -  Write a docker compose.yml file that define the following:
    1. App as a service for node.js application
       -  Builds the image from the provided Dockerfile in the cloned directory
