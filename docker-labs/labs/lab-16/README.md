@@ -13,7 +13,7 @@
          -  o POSTGRES_USER: postgres
          -  o POSTGRES_PASSWORD : postgres
          -  o POSTGRES_DB: postgres
-      -  Mounts a volume postgres_data for data persistence (/ var / postgresql /
+      -  Mounts a volume postgres_data for data persistence (/var/lib/postgresql/data)
       -  Use mynet network
   3. postgres_data as a volume
   4. mynet as a network
