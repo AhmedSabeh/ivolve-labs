@@ -1,11 +1,22 @@
 # Lab 16: Docker Compose for Node.js + PostgreSQL App
-
-This lab demonstrates how to containerize a **Node.js application** with a **PostgreSQL database** using **Docker Compose**.  
-It includes:
-- Building the Node.js app from a local Dockerfile
-- Running PostgreSQL with persistent storage
-- Connecting both services using a custom Docker network
-
+-  Clone source code and Dockerfile from https:// github.com/Ibrahim Adel15/docker6.git
+-  Write a docker compose.yml file that define the following:
+   1. App as a service for node.js application
+      -  Builds the image from the provided Dockerfile in the cloned directory
+      -  Expose port 3000
+      -  Depends on the db service to ensure PostgreSQL is ready before the app starts
+      -  Use mynet network
+   2. DB as a service for PostgreSQL Database
+      -  Uses the image: postgres:15 alpine
+      -  Runs on port 5432
+      -  Uses the following environment variables:
+         -  o POSTGRES_USER: postgres
+         -  o POSTGRES_PASSWORD : postgres
+         -  o POSTGRES_DB: postgres
+      -  Mounts a volume postgres_data for data persistence (/ var / postgresql /
+      -  Use mynet network
+  3. postgres_data as a volume
+  4. mynet as a network
 ---
 
 ## **1️⃣ Clone the Source Code**
