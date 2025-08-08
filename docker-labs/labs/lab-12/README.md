@@ -6,13 +6,12 @@ The first stage compiles the application using Maven, and the second stage creat
 ---
 
 ## **1️⃣ Clone the Application Code**
-```bash
+```
 git clone https://github.com/IbrahimAdel15/Docker1.git
 cd Docker1
-2️⃣ Create the Dockerfile
-dockerfile
-Copy
-Edit
+```
+## 2️⃣ Create the Dockerfile
+```
 # ===== Stage 1: Build the application =====
 FROM maven:3.9.6-eclipse-temurin-17 AS build
 
@@ -39,33 +38,25 @@ EXPOSE 8080
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
-3️⃣ Build the Docker Image
-bash
-Copy
-Edit
+```
+## 3️⃣ Build the Docker Image
+```
 docker build -t multi-stage-java-app .
-4️⃣ Run the Container
+```
+## 4️⃣ Run the Container
 Mapping host port 9095 to container port 8080 (default Spring Boot port).
-
-bash
-Copy
-Edit
+```
 docker run -d --name java-app -p 9095:8080 multi-stage-java-app
-5️⃣ Test the Application
-bash
-Copy
-Edit
+```
+## 5️⃣ Test the Application
+```
 curl http://localhost:9095
+```
 Or open in a browser:
-
-arduino
-Copy
-Edit
 http://localhost:9095
-6️⃣ Stop and Remove the Container
-bash
-Copy
-Edit
+
+## 6️⃣ Stop and Remove the Container
+```
 docker stop java-app
 docker rm java-app
-
+```
