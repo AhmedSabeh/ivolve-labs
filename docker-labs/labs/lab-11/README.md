@@ -97,10 +97,10 @@ docker stop springboot-container
 docker rm springboot-container
 ```
 6️⃣ Notes
-Option A: Builds the application inside the Docker image. Useful for CI/CD pipelines.
+-  Option A: Builds the application inside the Docker image. Useful for CI/CD pipelines.
 
-Option B: Builds the application locally, then copies the JAR file. Faster for local development.
+-  Option B: Builds the application locally, then copies the JAR file. Faster for local development.
 
-Ensure port 9092 is free before running the container.
+-  Ensure port 9092 is free before running the container.
 
-Change springboot-docker:latest to another tag if you want to version your images.
+-  Change springboot-docker:latest to another tag if you want to version your images.
