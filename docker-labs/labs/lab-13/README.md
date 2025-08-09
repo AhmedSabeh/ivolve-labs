@@ -91,4 +91,6 @@ docker exec -it <container_id> env | grep APP_
 Open your browser:
 
 http://localhost:9099
+<img width="1264" height="202" alt="Screenshot (142)" src="https://github.com/user-attachments/assets/2a1df31d-b9f6-489b-89b8-6bebfaf6ba5c" />
+
 <img width="1059" height="585" alt="Screenshot (130)" src="https://github.com/user-attachments/assets/4ae27889-005e-4539-b236-41bb477399a5" />
