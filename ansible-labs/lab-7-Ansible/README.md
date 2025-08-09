@@ -35,8 +35,7 @@ Edit Vault file:
 ```
 ansible-vault edit vars/vault.yml
 ```
-📜 Playbook Details
-Tasks Performed
+### Playbook Details
 - Install MariaDB 10.11 on Amazon Linux 2023.
 
 - Start and enable the MariaDB service.
@@ -49,7 +48,10 @@ Tasks Performed
 
 - Validate the database connection using the created user.
 
-🔧 How to Run
+---
+
+### How to Run:
+
 1️⃣ Update `inventory.ini` with your EC2 details
 ```
 [db]
@@ -59,22 +61,22 @@ Tasks Performed
 ```
 ansible-playbook -i inventory.ini playbook.yaml --ask-vault-pass
 ```
-Enter your Ansible Vault password when prompted.
+-  Enter your Ansible Vault password when prompted.
 
-✅ Validation
-SSH into EC2
+3️⃣ Validation
+-  SSH into EC2
 ```
 ssh -i ~/.ssh/path_to_private_key ec2-user@ec2_public_ip
 ```
-Log in to MariaDB
+-  Log in to MariaDB
 ```
 mysql -u ivolve_user -p
 ```
-List databases
+-  List databases
 ```
 SHOW DATABASES;
 ```
-Expected result:
+-  Expected result:
 ```
 +--------------------+
 | Database           |
