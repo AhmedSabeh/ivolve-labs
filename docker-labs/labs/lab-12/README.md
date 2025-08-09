@@ -33,8 +33,8 @@ WORKDIR /app
 # Copy the built JAR from the build stage
 COPY --from=build /app/target/*.jar app.jar
 
-# Expose port 8080 (application default)
-EXPOSE 8080
+# Expose port 9095 (application default)
+EXPOSE 9095
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
