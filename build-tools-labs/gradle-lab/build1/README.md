@@ -37,7 +37,8 @@ build/libs/ivolve-app.jar
 java -jar build/libs/ivolve-app.jar
 ```
 ### 6. Verify Application Output
-You should see the expected output in the terminal (e.g., application greeting message).
+You should see the expected output in the terminal (Hello iVolve Trainee).
+<img width="1366" height="99" alt="Screenshot (144)" src="https://github.com/user-attachments/assets/17b4c75a-9459-4382-b8e0-74660581d9a6" />
 
 Directory Structure
 ```
