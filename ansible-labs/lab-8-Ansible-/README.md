@@ -1,8 +1,9 @@
 # Lab 8: Automated Host Discovery with Ansible Dynamic Inventory (AWS EC2)
 
-This lab demonstrates how to use **Ansible's AWS EC2 Dynamic Inventory Plugin** to automatically discover and manage EC2 instances based on tags.  
-We specifically target EC2 instances with the tag:
-
+-  Create AWS EC2 with tag name:ivolve
+-  Set up Ansible dynamic inventories to automatically discover and manage running EC2s with tag name=ivolve.
+- list the target hosts in Dynamic inventory using ansible inventory command.
+-  Run any playbook or ad hoc command to verify.
 ---
 
 ## 📌 Prerequisites
