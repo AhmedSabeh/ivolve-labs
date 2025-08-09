@@ -1,8 +1,10 @@
 # Lab 9: Building and Packaging Java Applications with Gradle
-
-## Objective
-In this lab, we build and package a Java application using **Gradle**, run unit tests, generate the artifact, and verify the application is working.
-
+-    Install Gradle
+-    Clone source code https:// github.com/Ibrahim Adel15/build1.git
+-    Run Unit test.
+-    Build App [ generate artifact in build/libs/ivolve app.jar
+-    Run App.
+-    Verify App is working.
 ---
 
 ## Steps
