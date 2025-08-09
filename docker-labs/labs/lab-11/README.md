@@ -52,6 +52,8 @@ Step 3: Run the Container
 ```
 docker run -d --name springboot-container -p 9092:9092 springboot-docker:latest
 ```
+<img width="1055" height="581" alt="Screenshot (139)" src="https://github.com/user-attachments/assets/7d20a7c3-0c04-4312-87c7-fef797a71429" />
+
 3️⃣ Option B: Build Locally First
 Step 1: Build the Application Locally
 ```
@@ -91,6 +93,9 @@ Or open in a browser:
 
 http://localhost:9092
 
+<img width="1055" height="581" alt="Screenshot (139)" src="https://github.com/user-attachments/assets/bff8b0a3-a438-4268-810b-05ac93c9265b" />
+
+
 5️⃣ Stopping & Removing Containers
 ```
 docker stop springboot-container
@@ -101,6 +106,6 @@ docker rm springboot-container
 
 -  Option B: Builds the application locally, then copies the JAR file. Faster for local development.
 
--  Ensure port 9092 is free before running the container.
+<img width="722" height="52" alt="Screenshot (140)" src="https://github.com/user-attachments/assets/460e0e17-95d3-4f93-98a5-332c2617cf68" />
 
--  Change springboot-docker:latest to another tag if you want to version your images.
+
