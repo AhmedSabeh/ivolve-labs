@@ -8,7 +8,6 @@ The first stage compiles the application using Maven, and the second stage creat
 ## **1️⃣ Clone the Application Code**
 ```
 git clone https://github.com/IbrahimAdel15/Docker1.git
-cd Docker1
 ```
 ## 2️⃣ Create the Dockerfile
 ```
@@ -52,6 +51,8 @@ docker run -d --name java-app -p 9095:8080 multi-stage-java-app
 ```
 curl http://localhost:9095
 ```
+<img width="1267" height="145" alt="Screenshot (141)" src="https://github.com/user-attachments/assets/eb527d0b-07bf-41b5-a917-151c2135cf6d" />
+
 Or open in a browser:
 http://localhost:9095
 
