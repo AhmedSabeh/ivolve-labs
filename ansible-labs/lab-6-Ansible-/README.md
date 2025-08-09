@@ -1,12 +1,7 @@
 # Lab 6: Structured Configuration Management with Ansible Roles
-
-## Objective
-In this lab, we create Ansible roles to install:
-- **Docker**
-- **Kubernetes CLI** (`kubectl`)
-
-We then run a playbook that applies these roles to a managed node and verify the installations.
-
+-  Create an Ansible role for installing docker , Kubernetes CLI ‘kubectl ’, and
+-  Write Ansible playbook to run the created roles.
+-  Verify the installation on managed node.
 ---
 
 ## Prerequisites
