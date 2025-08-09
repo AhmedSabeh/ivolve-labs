@@ -1,8 +1,10 @@
 # Lab 10: Building and Packaging Java Applications with Maven
-
-## Objective
-In this lab, we build and package a Java application using **Maven**, run unit tests, generate the artifact, and verify the application is working.
-
+-    Install maven.
+-    Clone source code https:// github.com/Ibrahim Adel15/build2.git
+-    Run Unit test.
+-    Build App [ generate a rtifact in target / hello ivolve 1.0 SNAPSHOT.jar
+-    Run App.
+-    Verify App is working
 ---
 
 ## Steps
@@ -37,7 +39,8 @@ target/hello-ivolve-1.0-SNAPSHOT.jar
 java -jar target/hello-ivolve-1.0-SNAPSHOT.jar
 ```
 ### 6. Verify Application Output
-You should see the expected output in the terminal (e.g., application greeting message).
+You should see the expected output in the terminal (Hello Ivolve Trainee).
+<img width="1272" height="94" alt="Screenshot (146)" src="https://github.com/user-attachments/assets/650e2b9e-4d6f-4868-bac8-868280efa73f" />
 
 Directory Structure
 ```
